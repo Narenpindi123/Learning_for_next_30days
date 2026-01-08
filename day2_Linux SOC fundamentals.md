@@ -221,37 +221,35 @@ Finding:
 
 ---
 
-Impact Assessment
-Severity: Low
+## Impact Assessment
+- Severity: Low
+- System Compromise: None
+- Data Loss: None
+- Persistence: Not observed
 
-System Compromise: None
+---
 
-Data Loss: None
-
-Persistence: Not observed
-
-Root Cause
+## Root Cause
 The activity was intentionally generated for lab validation. In a production environment, this behavior would indicate a brute-force attack attempt.
 
-Recommended Actions
-Enable account lockout policies
+---
 
-Deploy fail2ban to block repeated authentication failures
+## Recommended Actions
+- Enable account lockout policies
+- Deploy fail2ban to block repeated authentication failures
+- Monitor authentication logs continuously
+- Forward logs to a SIEM for centralized alerting
 
-Monitor authentication logs continuously
+---
 
-Forward logs to a SIEM for centralized alerting
-
-Incident Status
+## Incident Status
 Closed – No compromise detected
 
-Skills Demonstrated
-Linux process monitoring
+---
 
-Authentication log analysis
-
-Brute-force detection
-
-Incident response documentation
-
-SOC analyst workflow
+## Skills Demonstrated
+- Linux process monitoring
+- Authentication log analysis
+- Brute-force detection
+- Incident response documentation
+- SOC analyst workflow
