@@ -169,52 +169,57 @@ journalctl -u ssh --since "15 minutes ago"
 ---
 
 ## Security Relevance
-Repeated failed logins from the same IP suggest brute-force attempts
+- Repeated failed logins from the same IP suggest brute-force attempts
+- Failed attempts followed by success may indicate compromised credentials
 
 ---
 
-Failed attempts followed by success may indicate compromised credentials
-
-Task 4 – Mini Incident Note
-Incident Title
+# Task 4 – Mini Incident Note
+## Incident Title
 Suspected Brute-Force Login Attempt on Linux Host
 
-Incident Summary
+---
+
+## Incident Summary
 Multiple failed SSH authentication attempts were observed within a short time window. The pattern of activity matched common brute-force login behavior.
 
-Detection Method
+---
+
+## Detection Method
 The incident was detected through manual analysis of Linux authentication logs after simulating failed login attempts.
 
-Evidence Collected
-Evidence 1 – Failed Authentication Attempts
-bash
-Copy code
+---
+
+## Evidence Collected
+## Evidence 1 – Failed Authentication Attempts
+```bash
 sudo grep "Failed password" /var/log/auth.log
+```
+
 Findings:
+- Multiple failed attempts
+- Invalid usernames
+- Same source IP
+- Close timestamps
 
-Multiple failed attempts
+---
 
-Invalid usernames
-
-Same source IP
-
-Close timestamps
-
-Evidence 2 – Login Correlation
-bash
-Copy code
+## Evidence 2 – Login Correlation
+```bash
 sudo grep "Accepted password" /var/log/auth.log
+```
 Finding:
+- No successful logins detected
 
-No successful logins detected
-
-Evidence 3 – Process Review
-bash
-Copy code
+---
+## Evidence 3 – Process Review
+```bash
 ps aux
+```
 Finding:
+- No suspicious or unauthorized processes running
 
-No suspicious or unauthorized processes running
+---
 
 Impact Assessment
 Severity: Low
