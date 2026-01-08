@@ -144,19 +144,20 @@ Repeated failures within a short time frame indicate possible brute-force behavi
 
 ---
 
-Identify Source IP Addresses
-bash
-Copy code
+## Identify Source IP Addresses
+```bash
 sudo grep "Failed password" /var/log/auth.log | awk '{print $(NF-3)}'
-Check for Successful Logins
-bash
-Copy code
+```
+
+---
+
+## Check for Successful Logins
+```bash
 sudo grep "Accepted password" /var/log/auth.log
+```
 Result:
-
-No successful logins were observed following the failed attempts
-
-No account compromise detected
+- No successful logins were observed following the failed attempts
+- No account compromise detected
 
 Using journalctl
 bash
