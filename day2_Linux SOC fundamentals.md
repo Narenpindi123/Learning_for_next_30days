@@ -159,12 +159,19 @@ Result:
 - No successful logins were observed following the failed attempts
 - No account compromise detected
 
-Using journalctl
-bash
-Copy code
+---
+
+## Using journalctl
+```bash
 journalctl -u ssh --since "15 minutes ago"
-Security Relevance
+```
+
+---
+
+## Security Relevance
 Repeated failed logins from the same IP suggest brute-force attempts
+
+---
 
 Failed attempts followed by success may indicate compromised credentials
 
