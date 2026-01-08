@@ -131,16 +131,18 @@ Sample log entry:
 Failed password for invalid user fakeuser from 127.0.0.1 port 54322 ssh2
 ```
 Explanation:
+- Indicates a failed SSH authentication attempt
+- Shows attempted username, source IP, and timestamp
 
-Indicates a failed SSH authentication attempt
-
-Shows attempted username, source IP, and timestamp
+---
 
 Count Failed Attempts
-bash
-Copy code
+```bash
 sudo grep "Failed password" /var/log/auth.log | wc -l
+```
 Repeated failures within a short time frame indicate possible brute-force behavior.
+
+---
 
 Identify Source IP Addresses
 bash
