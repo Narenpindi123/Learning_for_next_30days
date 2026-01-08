@@ -108,25 +108,28 @@ To simulate and detect suspicious authentication activity, such as brute-force l
 ---
 
 Simulating Failed Logins
-bash
-Copy code
+```bash
 ssh fakeuser@localhost
+```
 An incorrect password was entered multiple times to generate failed authentication events.
 
-Log Analysis
-Authentication Log Location
-bash
-Copy code
-/var/log/auth.log
-Identify Failed Login Attempts
-bash
-Copy code
-sudo grep "Failed password" /var/log/auth.log
-Sample log entry:
+---
 
-pgsql
-Copy code
+## Log Analysis
+Authentication Log Location
+```bash
+/var/log/auth.log
+```
+---
+
+## Identify Failed Login Attempts
+```bash
+sudo grep "Failed password" /var/log/auth.log
+```
+Sample log entry:
+```pgsql
 Failed password for invalid user fakeuser from 127.0.0.1 port 54322 ssh2
+```
 Explanation:
 
 Indicates a failed SSH authentication attempt
