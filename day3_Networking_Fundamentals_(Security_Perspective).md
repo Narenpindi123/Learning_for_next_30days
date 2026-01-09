@@ -14,7 +14,6 @@ When `google.com` is typed into the browser:
 - Since no protocol is specified, modern browsers default to:
 https://google.com
 
-yaml
 
 This means the browser will attempt a **secure HTTPS connection**.
 
