@@ -120,8 +120,6 @@ The browser sends an HTTP request such as:
 GET /
 Host: google.com
 
-yaml
-Copy code
 
 This request is:
 - Encrypted using TLS
