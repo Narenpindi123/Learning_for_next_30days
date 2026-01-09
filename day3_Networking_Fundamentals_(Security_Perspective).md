@@ -15,7 +15,6 @@ When `google.com` is typed into the browser:
 https://google.com
 
 yaml
-Copy code
 
 This means the browser will attempt a **secure HTTPS connection**.
 
