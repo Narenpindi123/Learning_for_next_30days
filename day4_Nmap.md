@@ -60,46 +60,42 @@ sudo nmap -O <test_vm_ip>
 ---
 
 # Task 3 – Reconnaissance Report
-## Scan Types Used
+### Scan Types Used
 - TCP SYN / TCP Connect scans for port discovery
 - Service version detection for identifying running software
 - OS fingerprinting for identifying the operating system
 
-## Information Gained
+### Information Gained
 - Open ports and exposed services
 - Software and service versions
 - Operating system details
 
-Why Attackers Use Reconnaissance
-To identify attack surfaces
+### Why Attackers Use Reconnaissance
+- To identify attack surfaces
+- To locate vulnerable or outdated services
+- To reduce guesswork and plan targeted attacks
 
-To locate vulnerable or outdated services
+### Defensive Perspective
+- Helps identify unnecessary exposed services
+- Supports attack surface reduction
+- Enables early detection of reconnaissance activity
 
-To reduce guesswork and plan targeted attacks
+---
 
-Defensive Perspective
-Helps identify unnecessary exposed services
-
-Supports attack surface reduction
-
-Enables early detection of reconnaissance activity
-
-Task 4 – How Nmap Helps Attackers and Defenders
+# Task 4 – How Nmap Helps Attackers and Defenders
 Nmap is a neutral tool whose impact depends on intent and authorization.
 
-Attackers
-Discover open ports and services
+### Attackers
+- Discover open ports and services
+- Identify vulnerable software versions
+- Tailor attacks based on OS information
 
-Identify vulnerable software versions
+### Defenders
+-Identify exposed services on their own systems
+- Validate firewall and security configurations
+- Detect reconnaissance activity in early attack stages
 
-Tailor attacks based on OS information
-
-Defenders
-Identify exposed services on their own systems
-
-Validate firewall and security configurations
-
-Detect reconnaissance activity in early attack stages
+---
 
 Additional Learning – Shodan Reconnaissance
 Use of Shodan
