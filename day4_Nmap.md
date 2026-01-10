@@ -13,25 +13,19 @@ All activities were performed **only on authorized systems** or through **public
 - **Active scanning** involves directly interacting with a target by sending packets and analyzing responses. It provides accurate results but is detectable.
 - **Passive scanning** gathers information without direct interaction, often by observing traffic or using publicly available data sources.
 
----
 
 ### TCP SYN Scan vs TCP Full Connect Scan
 - **TCP SYN scan** is a half-open scan that does not complete the TCP handshake. It is faster and less likely to be logged.
 - **TCP full connect scan** completes the handshake and is more easily detected in system logs.
 
----
 
 ### Version Detection
 - Identifies exact software and service versions running on open ports.
 - This information is critical because vulnerabilities are often **version-specific**.
 
----
-
 ### OS Fingerprinting
 - Attempts to identify the operating system based on TCP/IP behavior.
 - Accuracy depends on open ports, responses, and network conditions.
-
----
 
 ### Ethical Scanning Considerations
 - Scanning must always be authorized.
