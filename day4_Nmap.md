@@ -97,54 +97,39 @@ Nmap is a neutral tool whose impact depends on intent and authorization.
 
 ---
 
-Additional Learning – Shodan Reconnaissance
-Use of Shodan
+# Additional Learning – Shodan Reconnaissance
+### Use of Shodan
 In addition to Nmap, Shodan was used as a passive reconnaissance tool to understand how exposed systems appear on the public internet.
 
 Shodan provides visibility into:
+- Internet-facing services
+- Open ports and banners
+- Known vulnerabilities associated with exposed systems
 
-Internet-facing services
-
-Open ports and banners
-
-Known vulnerabilities associated with exposed systems
-
-Vulnerabilities Identified
+### Vulnerabilities Identified
 Using Shodan, two publicly exposed vulnerabilities were identified:
-
-One system located in Visakhapatnam (Vizag)
-
-One system located in Buffalo
-
+- One system located in Visakhapatnam (Vizag)
+- One system located in Buffalo
 These vulnerabilities were identified through publicly available data and no exploitation was performed.
 
-Responsible Disclosure
-Both vulnerabilities were reported responsibly to the respective organizations.
-
-No sensitive technical details were publicly disclosed.
-
-The reports followed ethical and professional disclosure practices.
-
-Responses from the affected organizations are currently pending.
-
+### Responsible Disclosure
+- Both vulnerabilities were reported responsibly to the respective organizations.
+- No sensitive technical details were publicly disclosed.
+- The reports followed ethical and professional disclosure practices.
+- Responses from the affected organizations are currently pending.
 This activity reinforced the importance of:
+- Ethical behavior
+- Responsible disclosure
+- Defensive security awareness
 
-Ethical behavior
+### Key Learning Outcomes
+- Scanning and reconnaissance reveal significant system information
+- Service and version exposure increases risk
+- OS fingerprinting aids targeted attacks
+- Public exposure can be identified without active scanning
+- Ethical and responsible disclosure is a critical security skill
 
-Responsible disclosure
-
-Defensive security awareness
-
-Key Learning Outcomes
-Scanning and reconnaissance reveal significant system information
-
-Service and version exposure increases risk
-
-OS fingerprinting aids targeted attacks
-
-Public exposure can be identified without active scanning
-
-Ethical and responsible disclosure is a critical security skill
+---
 
 Conclusion
 This lab demonstrated how both active and passive reconnaissance techniques are used in cybersecurity. Understanding how attackers gather information enables defenders to reduce exposure, harden systems, and respond appropriately to potential threats.
