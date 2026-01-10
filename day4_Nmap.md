@@ -131,8 +131,8 @@ This activity reinforced the importance of:
 
 ---
 
-Conclusion
+# Conclusion
 This lab demonstrated how both active and passive reconnaissance techniques are used in cybersecurity. Understanding how attackers gather information enables defenders to reduce exposure, harden systems, and respond appropriately to potential threats.
 
-Ethical Notice
+# Ethical Notice
 All scanning activities were conducted in a controlled lab environment or using publicly available information. No unauthorized scanning or exploitation was performed. All identified vulnerabilities were handled through responsible disclosure practices.
