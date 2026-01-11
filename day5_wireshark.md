@@ -76,9 +76,6 @@ DNS traffic is often the first indicator of compromise and is frequently used by
 **DNS**
 dns
 
-markdown
-Copy code
-
 **HTTP**
 http
 
